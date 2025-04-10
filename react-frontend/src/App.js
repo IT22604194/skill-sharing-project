@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ProductListComponent from './components/ProductListComponent';
-import AddProductComponent from './components/AddProductComponent';
-import UpdateProductComponent from './components/UpdateProductComponent';
-import logo from './logo.svg';
+import CommentListComponent from './components/CommentListComponent';
+import AddCommentComponent from './components/AddCommentComponent';
+import UpdateCommentComponent from './components/UpdateCommentComponent';
+
 import './App.css';
 
 function App() {
@@ -11,10 +11,10 @@ function App() {
     <Router>
             <div className="container">
                 <Routes>
-                    <Route path="/" element={<ProductListComponent />} />
-                    <Route path="/products" element={<ProductListComponent />} />
-                    <Route path="/add-product" element={<AddProductComponent />} />
-                    <Route path="/update-product/:id" element={<UpdateProductComponent />} />
+                    <Route path="/" element={<CommentListComponent />} />
+                    <Route path="/comments" element={<CommentListComponent />} />
+                    <Route path="/add-comment" element={<AddCommentComponent />} />
+                    <Route path="/update-comment/:id" element={<UpdateCommentComponent />} />
                 </Routes>
             </div>
         </Router>
